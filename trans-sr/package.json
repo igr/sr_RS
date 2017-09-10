@@ -1,0 +1,19 @@
+{
+  "name": "trans-sr",
+  "version": "1.0.0",
+  "description": "Transkripcija srpske latinice i cirilice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "igors",
+  "license": "BSD-2-Clause",
+  "bin": {
+    "trans-sr": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "commander": "^2.11.0",
+    "superagent": "^3.6.0"
+  }
+}
