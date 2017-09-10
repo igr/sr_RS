@@ -8,7 +8,12 @@ See:
 
 Usage:
 
-	trans-sr [cyr|lat] inputFileName
+	trans-sr [options] <input>
+		-o, --output <filename>
+		-m, --map <conversion map name>
+		-f, --file
+		-h, --help
+		-q, --quiet
 
 ## Development
 
