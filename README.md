@@ -2,8 +2,9 @@
 
 Skup resursa, alata i linkova koji se bave korišćenjem srpskog jezika u digitalnom svetu.
 
-## Sadržaj
+## SADRŽAJ :closed_book:
 
++ [Slepo kucanje](slepo-kucanje/README.md) - obuka osnovaca, učenje kucanja i prvi kontakt s računarom.
 + [Tastaturni raspored slova](keyboard/rs_alt_layout.md) - alternativni raspored slova, prilagođen programerima, sa _minimalnim_ izmenama!
 + [trans-sr](trans-sr/README.md) - CLI tool za transliteraciju, pisan u `nodejs`.
 + [Wordpress Latinica](wordpress/wordpress.md) - latinična lokalizacija WordPress-a, fajl sa prevodom.
