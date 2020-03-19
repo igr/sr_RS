@@ -1,19 +1,22 @@
 {
   "name": "trans-sr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Transkripcija srpske latinice i cirilice",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "igors",
+  "author": {
+    "name": "Igor Spasić",
+    "email": "igor.spasic@gmail.com",
+    "url": "https://igo.rs/"
+  },
   "license": "BSD-2-Clause",
   "bin": {
     "trans-sr": "./index.js"
   },
   "dependencies": {
-    "chalk": "^2.1.0",
-    "commander": "^2.11.0",
-    "superagent": "^3.6.0"
+    "chalk": "^3.0.0",
+    "commander": "^5.0.0"
   }
 }

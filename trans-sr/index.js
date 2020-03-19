@@ -1,22 +1,22 @@
 #!/usr/bin/env node
 
-var chalk = require('chalk');
-var fs = require('fs');
-var path = require('path');
-var program = require('commander');
-var request = require('superagent');
+let chalk = require('chalk');
+let fs = require('fs');
+let path = require('path');
+let program = require('commander');
 const util = require('util');
-const cyr2latin = require("./lib/cyr2latin");
+const cyr2lat = require("./lib/cyr2latin");
+const lat2cyr = require("./lib/latin2cyr");
 
 // transcode the string using given conversion map
 function trans(str, map) {
-	var out = "";
+	let out = "";
 
 	for (i = 0; i < str.length; i++) {
 		const c = str[i];
 
-		var transChar = map[c];
-		if (transChar == undefined) {
+		let transChar = map[c];
+		if (!transChar) {
 			transChar = c;
 		}
 
@@ -28,31 +28,27 @@ function trans(str, map) {
 console.log('\n' + chalk.bold.bgBlue.white(' trans') + chalk.bold.white('-') + chalk.bold.bgRed.white('sr ') + '\n');
 
 program
-	.version('0.1.0')
+	.version('1.1.0')
 	.option('-q, --quiet', 'Quiet mode')
 	.option('-f, --file', 'Input is a file')
 	.option('-o, --output <outFile>', 'Optional output file name')
-	.option('-m, --map <mapName>', 'Transliteration map name.')
+	.arguments('<mapName>', 'Transliteration map name: cyr2lat, lat2cyr')
 	.arguments('<input>', 'Input content')
-	.action(function(input) {
+	.action(function(mapName, input) {
 		if (!program.quiet) {
-			console.log(chalk.yellow('Converting input...\n'));
+			console.log(chalk.yellow(`Converting input with ${mapName}:\n`));
 		}
 
 		const currentDir = process.cwd();
 
 		// read input file or input string
-		var content = input;
+		let content = input;
 		if (program.file) {
 			content = fs.readFileSync(path.join(currentDir, input));
 		}
 
-		// define translitarion conversion map
-		var mapName = 'cyr2latin';
-		if (program.map) {
-			mapName = program.map;
-		}
-		var realMap = eval(mapName);
+		// conversion map
+		let realMap = eval(mapName);
 
 		out = trans(content.toString(), realMap.map);
 

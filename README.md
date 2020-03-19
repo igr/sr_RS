@@ -5,11 +5,11 @@ Skup resursa, alata i linkova koji se bave korišćenjem srpskog jezika u digita
 ## SADRŽAJ 📕
 
 + [Alternativni tastaturni raspored slova](keyboard/index.md) - RS raspored tastera, prilagođen programerima, sa _minimalnim_ izmenama!
-+ [trans-sr](trans-sr/index.md) - CLI tool za transliteraciju, pisan u JavaScriptu.
++ [trans-sr](trans-sr/README.md) - CLI tool za transliteraciju, pisan u JavaScriptu.
 + [Wordpress Latinica](wordpress/index.md) - latinična lokalizacija WordPress-a, fajl sa prevodom.
 + [Slepo kucanje](slepo-kucanje/index.md) - obuka osnovaca, učenje kucanja i prvi kontakt s računarom.
 
-## Ostalo 
+## Ostalo
 
 + [Definicije](Definicije.md) nekih pojmova.
 
