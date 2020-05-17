@@ -51,18 +51,16 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		set input to input as string		set input to replace_chars(input, "a", "а")	set input to replace_chars(input, "b", "б")	set input to replace_chars(input, "v", "в")	set input to replace_chars(input, "g", "г")	set input to replace_chars(input, "d", "д")
-	set input to replace_chars(input, "đ", "ђ")	set input to replace_chars(input, "e", "е")	set input to replace_chars(input, "ž", "ж")	set input to replace_chars(input, "z", "з")	set input to replace_chars(input, "i", "и")	set input to replace_chars(input, "j", "ј")	set input to replace_chars(input, "k", "к")	set input to replace_chars(input, "l", "л")
-	set input to replace_chars(input, "lj", "љ")	set input to replace_chars(input, "m", "м")	set input to replace_chars(input, "n", "н")
-	set input to replace_chars(input, "nj", "њ")	set input to replace_chars(input, "o", "о")	set input to replace_chars(input, "p", "п")	set input to replace_chars(input, "r", "р")	set input to replace_chars(input, "s", "с")	set input to replace_chars(input, "t", "т")
-	set input to replace_chars(input, "ć", "ћ")		set input to replace_chars(input, "u", "у")	set input to replace_chars(input, "f", "ф")	set input to replace_chars(input, "x", "х")	set input to replace_chars(input, "c", "ц")	set input to replace_chars(input, "č", "ч")
-	set input to replace_chars(input, "dž", "џ")	set input to replace_chars(input, "š", "ш")		set input to replace_chars(input, "A", "А")	set input to replace_chars(input, "B", "Б")	set input to replace_chars(input, "V", "В")	set input to replace_chars(input, "G", "Г")	set input to replace_chars(input, "D", "Д")
-	set input to replace_chars(input, "Đ", "Ђ")	set input to replace_chars(input, "E", "Е")	set input to replace_chars(input, "Ž", "Ж")	set input to replace_chars(input, "Z", "З")	set input to replace_chars(input, "I", "И")	set input to replace_chars(input, "J", "Ј")	set input to replace_chars(input, "K", "К")	set input to replace_chars(input, "L", "Л")
-	set input to replace_chars(input, "L", "Л")
-	set input to replace_chars(input, "Lj", "Љ")	set input to replace_chars(input, "M", "М")	set input to replace_chars(input, "N", "Н")
-	set input to replace_chars(input, "Nj", "Њ")	set input to replace_chars(input, "O", "О")	set input to replace_chars(input, "P", "П")	set input to replace_chars(input, "R", "Р")	set input to replace_chars(input, "S", "С")	set input to replace_chars(input, "T", "Т")
-	set input to replace_chars(input, "Ć", "Ћ")		set input to replace_chars(input, "U", "У")	set input to replace_chars(input, "F", "Ф")	set input to replace_chars(input, "X", "Х")	set input to replace_chars(input, "C", "Ц")	set input to replace_chars(input, "Č", "Ч")
-	set input to replace_chars(input, "Dž", "Џ")	set input to replace_chars(input, "Š", "Ш")		return input	end runon replace_chars(this_text, search_string, replacement_string)	considering case		set AppleScript's text item delimiters to the search_string		set the item_list to every text item of this_text		set AppleScript's text item delimiters to the replacement_string		set this_text to the item_list as string		set AppleScript's text item delimiters to ""		return this_text	end consideringend replace_chars</string>
+					<string>on run {input, parameters}		set input to input as string		set input to replace_chars(input, "a", "а")	set input to replace_chars(input, "b", "б")	set input to replace_chars(input, "v", "в")	set input to replace_chars(input, "g", "г")
+    set input to replace_chars(input, "dž", "џ")	set input to replace_chars(input, "d", "д")	set input to replace_chars(input, "đ", "ђ")	set input to replace_chars(input, "e", "е")	set input to replace_chars(input, "ž", "ж")	set input to replace_chars(input, "z", "з")	set input to replace_chars(input, "i", "и")	set input to replace_chars(input, "j", "ј")	set input to replace_chars(input, "k", "к")
+    set input to replace_chars(input, "lj", "љ")	set input to replace_chars(input, "l", "л")		set input to replace_chars(input, "m", "м")
+    set input to replace_chars(input, "nj", "њ")	set input to replace_chars(input, "n", "н")		set input to replace_chars(input, "o", "о")	set input to replace_chars(input, "p", "п")	set input to replace_chars(input, "r", "р")	set input to replace_chars(input, "s", "с")	set input to replace_chars(input, "t", "т")	set input to replace_chars(input, "ć", "ћ")		set input to replace_chars(input, "u", "у")	set input to replace_chars(input, "f", "ф")	set input to replace_chars(input, "x", "х")	set input to replace_chars(input, "c", "ц")	set input to replace_chars(input, "č", "ч")		set input to replace_chars(input, "š", "ш")		set input to replace_chars(input, "A", "А")	set input to replace_chars(input, "B", "Б")	set input to replace_chars(input, "V", "В")	set input to replace_chars(input, "G", "Г")
+    set input to replace_chars(input, "Dž", "Џ")
+    set input to replace_chars(input, "DŽ", "Џ")	set input to replace_chars(input, "D", "Д")	set input to replace_chars(input, "Đ", "Ђ")	set input to replace_chars(input, "E", "Е")	set input to replace_chars(input, "Ž", "Ж")	set input to replace_chars(input, "Z", "З")	set input to replace_chars(input, "I", "И")	set input to replace_chars(input, "J", "Ј")	set input to replace_chars(input, "K", "К")	set input to replace_chars(input, "L", "Л")
+    set input to replace_chars(input, "Lj", "Љ")
+    set input to replace_chars(input, "LJ", "Љ")	set input to replace_chars(input, "L", "Л")		set input to replace_chars(input, "M", "М")
+    set input to replace_chars(input, "Nj", "Њ")
+    set input to replace_chars(input, "NJ", "Њ")	set input to replace_chars(input, "N", "Н")		set input to replace_chars(input, "O", "О")	set input to replace_chars(input, "P", "П")	set input to replace_chars(input, "R", "Р")	set input to replace_chars(input, "S", "С")	set input to replace_chars(input, "T", "Т")	set input to replace_chars(input, "Ć", "Ћ")		set input to replace_chars(input, "U", "У")	set input to replace_chars(input, "F", "Ф")	set input to replace_chars(input, "X", "Х")	set input to replace_chars(input, "C", "Ц")	set input to replace_chars(input, "Č", "Ч")		set input to replace_chars(input, "Š", "Ш")		return input	end runon replace_chars(this_text, search_string, replacement_string)	considering case		set AppleScript's text item delimiters to the search_string		set the item_list to every text item of this_text		set AppleScript's text item delimiters to the replacement_string		set this_text to the item_list as string		set AppleScript's text item delimiters to ""		return this_text	end consideringend replace_chars</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -116,7 +114,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:598.000000</string>
+				<string>301.500000:916.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
